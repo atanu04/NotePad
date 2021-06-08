@@ -13,7 +13,8 @@ import com.example.notepad.R
 import com.example.notepad.model.Note
 import com.example.notepad.viewModel.NoteViewModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import kotlinx.android.synthetic.main.activity_edit_note.*
+import kotlinx.android.synthetic.main.activity_edit.*
+
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
@@ -24,7 +25,7 @@ class EditNoteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        setContentView(R.layout.activity_edit_note)
+        setContentView(R.layout.activity_edit)
 
 
         mViewModel = ViewModelProvider(this).get(NoteViewModel::class.java)
