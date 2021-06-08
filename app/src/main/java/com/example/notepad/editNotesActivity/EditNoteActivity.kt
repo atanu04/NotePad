@@ -48,8 +48,11 @@ class EditNoteActivity : AppCompatActivity() {
             val title = edit_title_id.text.toString()
             val desc = edit_desc_id.text.toString()
             if(noteOp == "Add") {
-                val note1 = Note(0,title,desc,currentDate())
-                mViewModel.addNote(note1)
+                if(title.isNotEmpty() or desc.isNotEmpty()){
+                    val note1 = Note(0,title,desc,currentDate())
+                    mViewModel.addNote(note1)
+                }
+
 
             }
             else{
