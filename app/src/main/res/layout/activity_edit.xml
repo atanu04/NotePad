@@ -19,7 +19,7 @@
         android:textStyle="bold"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@id/edit_desc_id"
-        />
+        android:autofillHints="@string/title" />
     <EditText
         android:id="@+id/edit_desc_id"
         android:layout_width="match_parent"
@@ -34,7 +34,7 @@
         android:gravity="top"
         android:inputType="textMultiLine"
         android:textColor="#02202E"
-        />
+        android:autofillHints="@string/description" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_button_Id"
@@ -46,9 +46,9 @@
         tools:layout_editor_absoluteY="634dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="50dp"
-        android:backgroundTint="#048CCA"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#03A9F4"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
